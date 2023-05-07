@@ -1,5 +1,6 @@
 package pe.edu.cibertec.appBaseDeDatos.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,6 +12,7 @@ import pe.edu.cibertec.appBaseDeDatos.service.EstadoService;
 @RequestMapping("/Estado")
 public class EstadoController {
 	
+	@Autowired
 	private EstadoService EstadoService;
 	
 	@GetMapping("/frmMantEstado")
